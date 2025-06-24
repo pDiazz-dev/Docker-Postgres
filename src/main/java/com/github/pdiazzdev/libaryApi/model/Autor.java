@@ -1,10 +1,7 @@
 package com.github.pdiazzdev.libaryApi.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.context.annotation.Primary;
 
 import java.time.LocalDate;
@@ -15,6 +12,7 @@ import java.util.UUID;
 @Table(name = "autor" , schema = "public") //quanod for public não precisa colocar.
 @Getter
 @Setter
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Autor {
